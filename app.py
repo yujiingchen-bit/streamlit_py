@@ -7,17 +7,17 @@ st.subheader("專案介紹")
 
 
 with st.sidebar:
-    a1=st.container()
-    with a1:
-        st.header("專案一")
-        st.button("A")
-        st.button("B")
-    a2=st.container()
-    with a2:
-        st.header("專案二")
-        st.button("C")
-        st.button("D")
-
+    with st.container():
+        st.header("選單標題1")
+        st.write("選單內容1")
+        st.button("按鈕A1")
+        st.button("按鈕K1")
+    with st.container():
+        st.header("選單標題2")
+        st.write("選單內容2")
+        st.button("按鈕B")
+        st.button("按鈕L")
+        
 c1, c2 = st.columns(2)
 with c1:
     st.write("專案一介紹")
